@@ -1,41 +1,17 @@
-/* package com.appium.iPhone;
 
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import io.appium.java_client.android.AndroidDriver;
-
-public class AndrooidSampleTest {
-	@Test
-	public void EmulatorTest() throws Exception {
-		DesiredCapabilities capabilities=new DesiredCapabilities();
-		capabilities.setCapability("automationName", "uiautomator2");
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion","8.0");
-		capabilities.setCapability("deviceName","Android Emulator");
-		capabilities.setCapability("app","/Users/vkamaraju/Desktop/android-debug.apk");
-		capabilities.setCapability("appPackage","io.ionic.starter");
-		capabilities.setCapability("appActivity","io.ionic.starter.MainActivity");
-		AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-		//AndroidDriver driver=new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
-		Thread.sleep(5000);
-		driver.quit();
-	}
-}*/
 package com.appium.iPhone;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -49,12 +25,12 @@ public class AndrooidSampleTest {
 	
 	//AppiumDriver<MobileElement> driver;
 	AndroidDriver <MobileElement> driver;
-	@Before
+	@BeforeTest
 	public void setUp()
 	{
 		DesiredCapabilities capabilities=new DesiredCapabilities();
 		capabilities.setCapability("automationName", "uiautomator2");
-		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("PlatformName", "System.getProperty(\"PlatformName\")");
 		capabilities.setCapability("platformVersion","8.0");
 		//capabilities.setCapability("platformVersion","7.1.1");
 		//capabilities.setCapability("platformVersion","7.0");
@@ -105,7 +81,7 @@ public class AndrooidSampleTest {
 			}
 		}
 	}
-	@After
+	@AfterTest
 	public void tearDown()
 	{
 		driver.quit();
