@@ -22,5 +22,7 @@ public class AndrooidSampleTest {
 		capabilities.setCapability("appActivity","io.ionic.starter.MainActivity");
 		AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		//AndroidDriver driver=new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
+		Thread.sleep(5000);
+		driver.quit();
 	}
 }
