@@ -26,5 +26,11 @@ public class iOSSampleTest {
 		driver.findElement(By.className("XCUIElementTypeTextField")).clear();
 		driver.findElement(By.className("XCUIElementTypeTextField")).sendKeys("100");
 		driver.findElement(By.name("20%")).click();
+		Thread.sleep(1000);
+	}
+	@After
+	public void tearDown()
+	{
+		driver.quit();
 	}
 }
