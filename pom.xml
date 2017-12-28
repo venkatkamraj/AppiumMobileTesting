@@ -116,5 +116,12 @@
     <scope>test</scope>
 </dependency>
     
-  </dependencies>
+</dependencies>
+<repositories>
+    <repository>
+      <id>maven1</id>
+      <name>your custom repo</name>
+      <url>http://repo.maven.apache.org/maven2</url>
+    </repository>
+ </repositories>
 </project>
