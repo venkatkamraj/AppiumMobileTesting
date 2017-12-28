@@ -73,11 +73,11 @@
 				<version>2.20</version>
 				<configuration>
 					<suiteXmlFiles>
-						 <suiteXmlFile>testngiOS.xml</suiteXmlFile>
-						   <!--  <suiteXmlFile>${testng}</suiteXmlFile>	-->		
+						 <!-- <suiteXmlFile>testngiOS.xml</suiteXmlFile> -->
+						   < <suiteXmlFile>${testng}</suiteXmlFile>		
 					</suiteXmlFiles>
-					<!-- <PlatformName>${value}</PlatformName>  -->
-					<PlatformName>iOS</PlatformName> 
+					 <PlatformName>${value}</PlatformName> 
+					<!-- <PlatformName>iOS</PlatformName>  -->
 				</configuration>				
 			</plugin>	
 					
