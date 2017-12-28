@@ -31,9 +31,7 @@ public class AndrooidSampleTest {
 		DesiredCapabilities capabilities=new DesiredCapabilities();
 		capabilities.setCapability("automationName", "uiautomator2");
 		capabilities.setCapability("PlatformName", "System.getProperty(\"PlatformName\")");
-		capabilities.setCapability("platformVersion","8.0");
-		//capabilities.setCapability("platformVersion","7.1.1");
-		//capabilities.setCapability("platformVersion","7.0");
+		capabilities.setCapability("PlatformVersion","System.getProperty(\"PlatformVersion\")");
 		capabilities.setCapability("deviceName","Android Emulator");	
 		capabilities.setCapability("APPIUM_VERSION", "1.7.1");
 		capabilities.setCapability("browserName","");	
