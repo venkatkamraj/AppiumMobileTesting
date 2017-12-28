@@ -74,7 +74,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						 <!-- <suiteXmlFile>testngiOS.xml</suiteXmlFile> -->
-						   < <suiteXmlFile>${testng}</suiteXmlFile>		
+						   <suiteXmlFile>${testng}</suiteXmlFile>		
 					</suiteXmlFiles>
 					 <PlatformName>${value}</PlatformName> 
 					<!-- <PlatformName>iOS</PlatformName>  -->
