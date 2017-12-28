@@ -78,7 +78,7 @@
 					</suiteXmlFiles>
 					 <PlatformName>${value}</PlatformName> 
 					<PlatformVersion>${value}</PlatformVersion> 
-					<DeviceName>${value}</DeviceName>
+					<!-- <DeviceName>${value}</DeviceName> -->
 					<!-- <PlatformName>iOS</PlatformName>  --> 
 				</configuration>				
 			</plugin>	
