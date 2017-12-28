@@ -77,7 +77,8 @@
 						   <suiteXmlFile>${testng}</suiteXmlFile>		
 					</suiteXmlFiles>
 					 <PlatformName>${value}</PlatformName> 
-					<!-- <PlatformName>iOS</PlatformName>  -->
+					<PlatformVersion>${value}</PlatformVersion> 
+					<!-- <PlatformName>iOS</PlatformName>  --> 
 				</configuration>				
 			</plugin>	
 					
