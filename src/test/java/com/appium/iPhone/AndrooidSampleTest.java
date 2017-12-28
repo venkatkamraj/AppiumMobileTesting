@@ -58,7 +58,7 @@ public class AndrooidSampleTest {
 		switchContext();	
 		driver.findElementByXPath("//div[2]/div/div[1]/div[2]/ion-searchbar/div/input").click();
 		driver.findElementByXPath("//div[2]/div/div[1]/div/ion-searchbar/div/input").sendKeys("TYLENOL");
-		
+		Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 			e.printStackTrace();
 		}
