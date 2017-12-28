@@ -73,12 +73,11 @@
 				<version>2.20</version>
 				<configuration>
 					<suiteXmlFiles>
-						<!--   <suiteXmlFile>testngiOS.xml</suiteXmlFile> -->
-						   <suiteXmlFile>${testng}</suiteXmlFile>	
-						<PlatformName>${value}</PlatformName> 
-					<!-- <PlatformName>iOS</PlatformName>  -->
+						 <suiteXmlFile>testngiOS.xml</suiteXmlFile>
+						   <!--  <suiteXmlFile>${testng}</suiteXmlFile>	-->		
 					</suiteXmlFiles>
-					
+					<!-- <PlatformName>${value}</PlatformName>  -->
+					<PlatformName>iOS</PlatformName> 
 				</configuration>				
 			</plugin>	
 					
@@ -116,12 +115,5 @@
     <scope>test</scope>
 </dependency>
     
-</dependencies>
-<repositories>
-    <repository>
-      <id>maven1</id>
-      <name>your custom repo</name>
-      <url>http://repo.maven.apache.org/maven2</url>
-    </repository>
- </repositories>
+  </dependencies>
 </project>
