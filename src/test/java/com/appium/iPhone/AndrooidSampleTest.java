@@ -32,7 +32,8 @@ public class AndrooidSampleTest {
 		capabilities.setCapability("automationName", "uiautomator2");
 		capabilities.setCapability("PlatformName", "System.getProperty(\"PlatformName\")");
 		capabilities.setCapability("PlatformVersion","System.getProperty(\"PlatformVersion\")");
-		capabilities.setCapability("deviceName","Android Emulator");	
+		capabilities.setCapability("DeviceName","System.getProperty(\"DeviceName\")");
+		//capabilities.setCapability("deviceName","Android Emulator");	
 		capabilities.setCapability("APPIUM_VERSION", "1.7.1");
 		capabilities.setCapability("browserName","");	
 		capabilities.setCapability("chromedriverExecutable", "/usr/local/bin/chromedriver2");
