@@ -52,7 +52,7 @@ public class AndrooidSampleTest {
 		//System.out.println("Session is created");
 	}
 	@Test
-	public void getWebView()
+	public void getWebView() throws InterruptedException
 	{
 		try {
 			
