@@ -26,7 +26,7 @@ public class AndrooidSampleTest {
 	//AppiumDriver<MobileElement> driver;
 	AndroidDriver <MobileElement> driver;
 	@BeforeTest
-	public void setUp()
+	public void setUp() throws InterruptedException
 	{
 		DesiredCapabilities capabilities=new DesiredCapabilities();
 		capabilities.setCapability("automationName", "uiautomator2");
