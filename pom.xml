@@ -74,10 +74,11 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!--   <suiteXmlFile>testngiOS.xml</suiteXmlFile> -->
-						   <suiteXmlFile>${testng}</suiteXmlFile>			
-					</suiteXmlFiles>
-					<PlatformName>${value}</PlatformName> 
+						   <suiteXmlFile>${testng}</suiteXmlFile>	
+						<PlatformName>${value}</PlatformName> 
 					<!-- <PlatformName>iOS</PlatformName>  -->
+					</suiteXmlFiles>
+					
 				</configuration>				
 			</plugin>	
 					
