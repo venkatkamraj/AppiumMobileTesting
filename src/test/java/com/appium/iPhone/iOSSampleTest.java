@@ -22,10 +22,10 @@ public class iOSSampleTest {
 	public void simulatorTest() throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("PlatformName", "System.getProperty(\"PlatformName\")");
-		capabilities.setCapability("PlatformName", "System.getProperty(\"PlatformName\")");
 		capabilities.setCapability("PlatformVersion","System.getProperty(\"PlatformVersion\")");
+		capabilities.setCapability("DeviceName","System.getProperty(\"DeviceName\")");
 		//capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.2");
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
+		//capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.7.1");
 		capabilities.setCapability(MobileCapabilityType.APP, "/Users/vkamaraju/Desktop/tippo3000.app");
